@@ -1,0 +1,61 @@
+Age,Gender,Employment status,Personal Income Anually,Household Income Anually,Computer Usage Per Day,Portablility of the laptop,Favorite Laptop Brand,Have you used dell product before?,Do you like Dell Product?,Budget for a new laptop.
+23,Male,Student,0,6115,13,Needed,Dell,Yes,Yes,3386
+20,Female,Student,0,6251,9,Not Needed,MSI,No,Yes,2630
+18,Female,Student,0,4556,9,Needed,Lenovo,Yes,Yes,2370
+23,Male,Student,0,6442,5,Not Needed,Dell,No,No,5705
+21,Female,Student,0,7786,3,Needed,MSI,Yes,No,4225
+23,Female,Student,0,8276,10,Not Needed,MSI,No,Yes,2695
+22,Male,Student,0,7532,10,Needed,Lenovo,No,No,3695
+22,Female,Student,0,6679,10,Not Needed,Lenovo,Yes,No,2302
+22,Female,Student,0,3619,13,Not Needed,Lenovo,No,Yes,2558
+18,Male,Student,0,8962,11,Needed,MSI,No,No,2936
+21,Male,Student,0,5735,17,Not Needed,Lenovo,Yes,No,3264
+25,Female,Student,0,8448,3,Not Needed,Lenovo,No,Yes,3114
+21,Female,Student,0,5819,11,Needed,Dell,No,Yes,4462
+18,Male,Student,0,3109,2,Not Needed,MSI,Yes,No,4444
+23,Male,Student,0,4331,13,Not Needed,Lenovo,No,No,3576
+18,Female,Student,0,7773,9,Needed,MSI,No,Yes,5552
+25,Female,Student,0,7996,7,Not Needed,MSI,Yes,No,2729
+25,Male,Student,0,3789,6,Not Needed,Dell,No,No,3741
+21,Female,Student,0,7752,8,Needed,MSI,No,Yes,3195
+33,Female,Working,5323,8483,14,Not Needed,Lenovo,Yes,Yes,2267
+33,Male,Working,3323,6464,13,Needed,Dell,No,Yes,5619
+47,Female,Working,3336,9274,3,Needed,MSI,No,Yes,5727
+50,Female,Working,2347,9917,18,Not Needed,MSI,Yes,Yes,4092
+25,Male,Working,4092,12323,5,Needed,Lenovo,No,No,5979
+57,Male,Working,4954,10977,14,Needed,Lenovo,No,No,2938
+59,Female,Working,4985,13625,11,Not Needed,Lenovo,Yes,Yes,4853
+39,Female,Working,5745,11704,12,Needed,MSI,No,No,2954
+48,Male,Working,4446,9775,4,Needed,Lenovo,No,No,5036
+58,Male,Working,3957,11091,10,Not Needed,Lenovo,Yes,Yes,3962
+46,Female,Working,2879,11564,13,Needed,Dell,No,Yes,3226
+45,Female,Working,3096,8567,16,Needed,MSI,No,Yes,4160
+31,Male,Working,5970,12838,12,Not Needed,Lenovo,Yes,Yes,4504
+30,Female,Working,4217,7711,3,Not Needed,MSI,No,Yes,3480
+49,Female,Working,4159,8788,17,Needed,MSI,No,No,5434
+50,Male,Working,2379,6113,12,Not Needed,Dell,Yes,No,5301
+34,Female,Working,5679,10629,5,Not Needed,MSI,No,Yes,3675
+44,Female,Working,3557,7239,4,Needed,Lenovo,No,No,3591
+26,Male,Working,2129,5866,12,Needed,Dell,Yes,No,4647
+25,Male,Working,2696,6049,11,Not Needed,MSI,No,Yes,4687
+55,Female,Working,2195,9907,9,Needed,MSI,No,Yes,5373
+58,Female,Working,5924,9548,7,Not Needed,Lenovo,Yes,Yes,4689
+51,Male,Working,5993,9938,14,Not Needed,Lenovo,No,Yes,5852
+64,Male,Working,2571,8797,6,Needed,Lenovo,No,Yes,5148
+66,Female,Working,2602,9440,14,Not Needed,MSI,Yes,No,3662
+58,Female,Working,5280,13800,17,Needed,Lenovo,No,No,4944
+70,Male,Working,4794,8967,15,Needed,Lenovo,No,Yes,2330
+54,Female,Working,4956,12701,12,Not Needed,Dell,Yes,Yes,2361
+50,Female,Working,2507,10831,17,Not Needed,MSI,No,Yes,5807
+65,Male,Working,4587,12159,14,Needed,Lenovo,No,No,2206
+62,Female,Working,3488,8391,12,Not Needed,MSI,Yes,No,3378
+55,Female,Working,2841,8314,17,Needed,MSI,No,Yes,5272
+59,Male,Working,4814,11932,5,Not Needed,Dell,No,Yes,2190
+51,Male,Working,2665,9372,6,Not Needed,MSI,Yes,Yes,5044
+59,Female,Working,2594,9528,15,Needed,Lenovo,No,No,3086
+56,Female,Working,5025,12762,9,Not Needed,Dell,No,No,2737
+61,Male,Working,2008,6656,10,Needed,MSI,Yes,Yes,2531
+70,Male,Working,5372,13540,15,Not Needed,MSI,No,Yes,4605
+58,Female,Working,3248,6407,17,Needed,Lenovo,No,Yes,3140
+66,Female,Working,2893,7307,14,Needed,Lenovo,Yes,No,5859
+31,Male,Working,4000,8656,10,Needed,MSI,No,Yes,2531
