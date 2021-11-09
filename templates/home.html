@@ -6,6 +6,12 @@
 
     <form method="POST" action="{{ url_for('submit') }}" enctype="multipart/form-data">
         <p><input type="file" name="file" accept=".csv"></p>
+
+        <label for="rg-from">Target Column Name: </label>
+        <input name="target_name" value="{{ target_name }}">
+
+        <br>
+
         <label for="rg-from">Problem type: </label>
         <select name=selected_type>
             {% for type in type_list %}
