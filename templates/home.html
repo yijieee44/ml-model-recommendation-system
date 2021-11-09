@@ -29,7 +29,21 @@
     <hr class="dash">
 
     <h5>Result: </h5>
+    <p>{{ error_message }}</p>
+
+    {% if selected_des != "" %}
     <p>{{ selected_des }}</p>
-    <p>{{ result }}</p>
+
+    <img src="{{ graph_url }}" height="600" width="1200">
+
+    <br>
+
+    {% for table in tables %}
+        {{ table|safe }}
+    {% endfor %}
+    {% endif %}
+
+    <br>
+    <br>
 
 {% endblock %}
