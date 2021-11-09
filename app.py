@@ -2,6 +2,7 @@ from flask import Flask, render_template, request, flash, redirect, url_for
 from werkzeug.utils import secure_filename
 import pandas as pd
 
+from collections import Counter
 from src.model.pycaret_compare import reg_compare, cla_compare
 
 app = Flask(__name__)
@@ -11,7 +12,7 @@ result = ""
 @app.route('/', methods=['GET'])
 def home():
     return render_template('home.html', type_list=type_list, result=result, 
-    selected_type=type_list[0], selected_des="", target_name="")
+    selected_type=type_list[0], selected_des="", target_name="", notBalance=False)
 
 
 @app.route('/', methods=['POST'])
@@ -36,13 +37,22 @@ def submit():
     
         df = pd.read_csv(file.stream)
         df = clean(df)
+
+        notBalance = False
+
         if selected_type == "Regression":
             best_model, result_df = reg_compare(df, target_name)
         elif selected_type == "Classification":
+            target_column = df[target_name]
+            count = dict(Counter(target_column))
+            average =  len(target_column)/len(count.keys())
+            for x in count:
+                if count[x] < average/2:
+                    notBalance = True
             best_model, result_df = cla_compare(df, target_name)
         result = result_df.to_string()
     
-    return render_template('home.html', type_list=type_list, result=result, selected_type=selected_type, selected_des=selected_des, target_name=target_name)
+    return render_template('home.html', type_list=type_list, result=result, selected_type=selected_type, selected_des=selected_des, target_name=target_name, notBalance=notBalance)
 
 def clean(df):
     df = df[~df[' Income '].isnull()]
