@@ -30,6 +30,11 @@
 
     <h5>Result: </h5>
     <p>{{ selected_des }}</p>
+
+    {% if selected_type == "Classification" and notBalance %}
+    <p style="color: red;">The data is not balance</p>
+    {% endif %}
+
     <p>{{ result }}</p>
 
 {% endblock %}
