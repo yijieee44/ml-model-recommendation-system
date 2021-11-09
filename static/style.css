@@ -3,7 +3,7 @@ hr.dash {
   margin-top: 50px;
 }
 
-button.check {
-    margin-top:10px;
+button.submit {
     float:right;
+    margin-top: 20px;
 }

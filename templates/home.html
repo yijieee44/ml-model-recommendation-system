@@ -2,12 +2,28 @@
 
 {% block content %}
 
-    <h5 style="margin-top: 10px">Upload your dataset here: </h5>
+    <h5 style="margin-top: 10px">Upload your dataset here (.csv): </h5>
 
-    <button type="submit" class="check">Check</button>
+    <form method="POST" action="{{ url_for('submit') }}" enctype="multipart/form-data">
+        <p><input type="file" name="file" accept=".csv"></p>
+        <label for="rg-from">Problem type: </label>
+        <select name=selected_type>
+            {% for type in type_list %}
+                {% if type == selected_type %}
+                <option value= "{{type}}" selected="selected_type">{{type}}</option>"
+                {% else %}
+                <option value= "{{type}}">{{type}}</option>"
+                {% endif %}
+            {% endfor %}
+        </select>
+
+        <button type="submit" class="submit">Submit</button>
+    </form>
 
     <hr class="dash">
 
     <h5>Result: </h5>
-    
+    <p>{{ selected_des }}</p>
+    <p>{{ result }}</p>
+
 {% endblock %}
