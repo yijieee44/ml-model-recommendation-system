@@ -19,10 +19,11 @@ def home():
 def submit():
     selected_type = request.form.get('selected_type')
     target_name = request.form.get('target_name')
-
+    notBalance = False
+    suitable = ""
     if 'file' not in request.files:
         result = "## Error: No file uploaded"
-        return render_template('home.html', type_list=type_list, result=result, selected_type=selected_type, selected_des="", target_name=target_name)
+        return render_template('home.html', type_list=type_list, result=result, selected_type=selected_type, selected_des="", target_name=target_name, notBalance=False, suitable="")
 
     file = request.files['file']
     
@@ -38,10 +39,9 @@ def submit():
         df = pd.read_csv(file.stream)
         df = clean(df)
 
-        notBalance = False
 
         if selected_type == "Regression":
-            best_model, result_df = reg_compare(df, target_name)
+            best_model, result_df, suitable = reg_compare(df, target_name)
         elif selected_type == "Classification":
             target_column = df[target_name]
             count = dict(Counter(target_column))
@@ -49,10 +49,10 @@ def submit():
             for x in count:
                 if count[x] < average/2:
                     notBalance = True
-            best_model, result_df = cla_compare(df, target_name)
+            best_model, result_df, suitable = cla_compare(df, target_name)
         result = result_df.to_string()
     
-    return render_template('home.html', type_list=type_list, result=result, selected_type=selected_type, selected_des=selected_des, target_name=target_name, notBalance=notBalance)
+    return render_template('home.html', type_list=type_list, result=result, selected_type=selected_type, selected_des=selected_des, target_name=target_name, notBalance=notBalance, suitable=suitable)
 
 def clean(df):
     df = df[~df[' Income '].isnull()]

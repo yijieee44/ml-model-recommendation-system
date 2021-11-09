@@ -31,8 +31,16 @@
     <h5>Result: </h5>
     <p>{{ selected_des }}</p>
 
+    {% if suitable != "" %}
+    {% if suitable %}
+    <p style="color: green;">The dataset is recommended to be used for this problem</p>
+    {% else %}
+    <p style="color: red;">The dataset is not recommended to be used for this problem</p>
+    {% endif %}
+    {% endif %}
+
     {% if selected_type == "Classification" and notBalance %}
-    <p style="color: red;">The data is not balance</p>
+    <p style="color: red;">The target column is not balance</p>
     {% endif %}
 
     <p>{{ result }}</p>
